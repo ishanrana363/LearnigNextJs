@@ -41,6 +41,13 @@ const Navbar = () => {
     const handleChange = ()=>{
         router.push("register")
     }
+    if( pathName.includes("dashboard") ){
+        return(
+            <div className='bg-green-400 py-4 ' >
+                dashboard
+            </div>
+        )
+    }
     return (
         <div className='bg-green-400' >
             <div className='max-w-screen-xl mx-auto ' >

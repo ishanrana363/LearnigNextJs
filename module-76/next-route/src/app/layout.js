@@ -30,6 +30,9 @@ export default function RootLayout({ children }) {
         <div className="h-screen" >
           {children}
         </div>
+        <div>
+          <h1>Footer dashboard</h1>
+        </div>
       </body>
     </html>
   );
