@@ -24,10 +24,18 @@ const Navbar = () => {
         {
             path: "/faq",
             name: "FAQ",
+        },
+        {
+            path : "categories",
+            name : "Categories"
+
         }
     ]
     const pathName = usePathname();
-    console.log(pathName);
+    console.log(pathName)
+    if (pathName.includes("dashboard"))
+        return ( <div className=" text-center bg-green-500/15 py-4" > Dashboard layout </div> )
+
     return (
         <div className="bg-green-500" >
             <div className="max-w-screen-xl mx-auto ">
