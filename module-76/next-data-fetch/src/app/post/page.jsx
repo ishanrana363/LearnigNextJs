@@ -1,9 +1,13 @@
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
 
 const getData = async () => {
     let res = await fetch("https://jsonplaceholder.typicode.com/posts");
     let data = await res.json();
+    if(data){
+        redirect(`/post/${data[0].id}`);
+    }
     return data;
 };
 
