@@ -7,6 +7,12 @@ const getData = async () => {
     return data;
 };
 
+export const metadata = {
+    title: 'Post',
+    description: 'Post | Page',
+};
+
+
 const PostPage = async () => {
     const postData = await getData();
 
